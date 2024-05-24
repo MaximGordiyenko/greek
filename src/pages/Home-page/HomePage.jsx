@@ -3,6 +3,8 @@ import Text_line_home_1 from '../../assets/Text_line_home_1.svg';
 import { LifeStyleAppBlock } from './LifeStyleAppBlock.jsx';
 import { MoreThenDatingBlock } from './MoreThenDatingBlock.jsx';
 import { WhyHeyGreekBlock } from './WhyHeyGreekBlock.jsx';
+import { SuccessStoriesBlock } from './SuccessStoriesBlock.jsx';
+import { FollowInstagramBlock } from './FollowInstagramBlock.jsx';
 
 export const HomePage = () => {
   return (
@@ -14,7 +16,12 @@ export const HomePage = () => {
       <MoreThenDatingBlock/>
       
       <WhyHeyGreekBlock/>
-    
+      
+      <Box width="100%" component="img" src={Text_line_home_1} alt="driven_line_home_1"/>
+      
+      <SuccessStoriesBlock/>
+      
+      <FollowInstagramBlock />
     </Grid>
   );
 };
