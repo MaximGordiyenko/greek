@@ -1,28 +1,22 @@
 import { HeaderLogoIcon } from '../Icons/HeaderLogoIcon.jsx';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Stack, Divider, styled } from '@mui/material';
 
 export const Logo = () => {
   return (
-    <Box sx={{ display: { xs: 'flex', md: 'flex' }, mr: 1 }}>
+    <Stack
+      direction="row" spacing={2}
+      divider={<Divider orientation="vertical" style={{ marginTop: "14px"}} sx={{ height: "50%", borderColor: 'black' }}/>}>
       <HeaderLogoIcon className="display: flex"/>
-      <Box sx={{ width: 100 }}>
+      <Box sx={{ width: 120, display: 'flex', alignItems: 'center' }}>
         <Typography
-          variant="caption"
+          paragraph
           href="#app-bar-with-responsive-menu"
-          sx={{
-            mr: 2,
-            display: { xs: 'flex', md: 'flex' },
-            flexGrow: 1,
-            fontFamily: 'monospace',
-            fontWeight: 700,
-            letterSpacing: '.3rem',
-            color: 'inherit',
-            textDecoration: 'none'
-          }}>
-          Made for the Greeks
-          by Greeks
+          sx={{ m: 0, flexGrow: 1, fontSize: 12 }}>
+          Made for the Greeks by Greeks
         </Typography>
       </Box>
-    </Box>
+    </Stack>
   );
 };
+
+export const DividerCSS = styled(Divider)(({ theme }) => ({}));

@@ -1,6 +1,6 @@
 export const HeaderLogoIcon = ({ className }) => {
   return (
-    <svg className={`${className}`} width="172" height="50" viewBox="0 0 172 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={`${className}`} width="120" height="50" viewBox="0 0 172 50" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M80.7286 10.8076L83.9883 14.0839V19.4999H77.7683V16.5579H74.176V31.8028H77.7683V27.4232H75.6728V21.6729H83.9883V34.2767L80.7286 37.553H71.2157L67.9561 34.2767V14.0839L71.2157 10.8076H80.7286Z"
         fill="#FFB800"/>

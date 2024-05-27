@@ -1,20 +1,25 @@
 import './App.css';
-import { Header } from './components/Header/Header.jsx';
-import { Grid } from '@mui/material';
+import { HomePage } from './pages/Home-page/HomePage.jsx';
+import { Routes, BrowserRouter, Route } from 'react-router-dom';
+import { Layout } from './components/layouts/Layout.jsx';
+import { DatingPage } from './pages/dating-page/DatingPage.jsx';
+import { NetworkingPage } from './pages/networking-page/NetworkingPage.jsx';
+import { TechPage } from './pages/tech-page/TechPage.jsx';
+import { AboutPage } from './pages/about-page/AboutPage.jsx';
 
 export const App = () => {
   
   return (
-    <>
-      <Header/>
-      <Grid container>
-        <Grid item xs={12} sm={12} md={12} lg={12}>
-        </Grid>
-      </Grid>
-      <Grid container>
-        <Grid item xs={6}>
-        </Grid>
-      </Grid>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout/>}>
+          <Route path="home" element={<HomePage />} />
+          <Route path="dating" element={<DatingPage />} />
+          <Route path="networking" element={<NetworkingPage />} />
+          <Route path="tech" element={<TechPage />} />
+          <Route path="about" element={<AboutPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
