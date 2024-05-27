@@ -8,25 +8,25 @@ export const BackgroundGrid = styled(Grid)(({ img, height, repeat, theme }) => (
   [theme.breakpoints.up('xs')]: {
     backgroundImage: `url(${img})`,
     backgroundSize: repeat ? 'auto' : 'cover',
-    height: height,
+    height: height ? height : 'auto',
   },
   [theme.breakpoints.up('sm')]: {
     backgroundImage: `url(${img})`,
     backgroundSize: repeat ? 'auto' : 'cover',
-    height: height,
+    height: height ? height : 'auto',
   },
   [theme.breakpoints.up('md')]: {
     backgroundImage: `url(${img})`,
     backgroundSize: repeat ? 'auto' : 'cover',
-    height: height,
+    height: height ? height : 'auto',
   },
   [theme.breakpoints.up('lg')]: {
     backgroundImage: `url(${img})`,
     backgroundSize: repeat ? 'auto' : 'cover',
-    height: height,
+    height: height ? height : 'none',
   },
 }));
 
-export const BoxCSS = styled(Box)(({ theme }) => ({
-  background: theme.palette.primary.main
+export const Wrapper = styled(Grid)(({ theme }) => ({
+  background: theme.palette.common.white
 }));

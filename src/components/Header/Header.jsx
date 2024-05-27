@@ -37,6 +37,7 @@ export const Header = () => {
           onClick={toggleDrawer(true)}
           sx={{
             mr: 2,
+            p: 0,
             display: {
               xs: "flex",
               sm: "none"

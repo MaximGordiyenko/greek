@@ -7,7 +7,7 @@ import Instagram_icon from '../../assets/Instagram_icon.svg';
 
 export const Footer = () => {
   return (
-    <GridCSS container sx={{ px: 18, py: 4 }}>
+    <GridCSS container sx={{ px: 18, py: 4 }} component="footer">
       <Grid item xs={12} sm={12} md={12} lg={6}>
         <Box component="img" width="25%" src={HeyGreek} alt="HeyGreek"/>
       </Grid>
