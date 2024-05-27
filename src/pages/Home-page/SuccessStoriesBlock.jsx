@@ -1,10 +1,10 @@
 import { BackgroundGrid } from './ui.styles.js';
-import Pattern_Asterisk from '../../assets/Pattern_Asterisk.svg';
 import { Box, Typography, Grid, styled } from '@mui/material';
-import Story1_img from '../../assets/Story1_img.svg';
-import Story2_img from '../../assets/Story2_img.svg';
-import Story3_img from '../../assets/Story3_img.svg';
-import Play_icon from '../../assets/Play_icon.svg';
+import Pattern_Asterisk from '../../assets/Pattern_Asterisk.webp';
+import Story1_img from '../../assets/Story1_img.webp';
+import Story2_img from '../../assets/Story2_img.webp';
+import Story3_img from '../../assets/Story3_img.webp';
+import Play_icon from '../../assets/Play_icon.webp';
 
 export const SuccessStoriesBlock = () => {
   return (

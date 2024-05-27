@@ -1,4 +1,4 @@
-import { Container, Grid, Box, styled } from "@mui/material";
+import { Grid, styled } from "@mui/material";
 
 export const BackgroundGrid = styled(Grid)(({ img, repeat, theme, width, height, border }) => ({
   width: '100%',

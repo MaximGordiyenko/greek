@@ -2,9 +2,9 @@ import { Typography, Button, Grid } from '@mui/material';
 
 import { BackgroundGrid, Wrapper } from './ui.styles.js';
 
-import Pattern_Stars from '../../assets/Pattern_Stars.svg';
-import Dating_omg from '../../assets/Dating_omg.svg';
-import Connecting_img from '../../assets/Connecting_img.svg';
+import Pattern_Stars from '../../assets/Pattern_Stars.webp';
+import Dating_omg from '../../assets/Dating_omg.webp';
+import Connecting_img from '../../assets/Connecting_img.webp';
 
 export const MoreThenDatingBlock = () => {
   return (

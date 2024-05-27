@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { AppBar, IconButton, Container, Box, Drawer, Divider, Button } from "@mui/material";
+import { AppBar, IconButton, Container, Box, Drawer, Divider } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -23,7 +23,7 @@ export const Header = () => {
   };
   
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{color: '#000', background: '#fafafa'}}>
       <Container maxWidth="lg" sx={{ display: "flex", justifyContent: "space-between", py: 1 }}>
         <Logo/>
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

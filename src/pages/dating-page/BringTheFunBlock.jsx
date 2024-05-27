@@ -1,13 +1,13 @@
-import Pattern_Bolts from '../../assets/Pattern_Bolts.svg';
-import { Grid, Typography, Box } from '@mui/material';
-import Greeks_img from '../../assets/Greeks_img.svg';
-import Matching_img from '../../assets/Matching_img.svg';
-import Entertainment_img from '../../assets/Entertainment_img.svg';
 import { BackgroundGrid } from '../Home-page/ui.styles.js';
+import { Grid, Typography, Box } from '@mui/material';
+import Pattern_Hearts from '../../assets/Pattern_Hearts.webp';
+import Drinks_img from '../../assets/Drinks_img.webp';
+import Serenades_img from '../../assets/Serenades_img.webp';
+import Senses_img from '../../assets/Senses_img.webp';
 
 export const BringTheFunBlock = () => {
   return (
-    <BackgroundGrid container img={Pattern_Bolts} repeat>
+    <BackgroundGrid container img={Pattern_Hearts} repeat>
       <Grid item xs={12} sm={12} md={12} lg={12} textAlign="center"
             sx={{ py: { xs: 4, lg: 6 }, px: { xs: 4, lg: 50 } }}>
         <Typography variant="h2">Bringing the fun into dating</Typography>
@@ -15,7 +15,7 @@ export const BringTheFunBlock = () => {
       
       <Grid item container display="flex" justifyContent="space-evenly" sx={{ px: { xs: 2, lg: 12 } }}>
         <Grid item xs={12} sm={12} md={12} lg={2.5}>
-          <Box width="100%" component="img" src={Greeks_img} alt="Greeks_img"
+          <Box width="100%" component="img" src={Drinks_img} alt="Drinks_img"
                border={1} borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom variant="h5">Drinks</Typography>
           <Typography paragraph variant="body2">
@@ -23,7 +23,7 @@ export const BringTheFunBlock = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={2.5}>
-          <Box width="100%" component="img" src={Matching_img} alt="Matching_img"
+          <Box width="100%" component="img" src={Serenades_img} alt="Serenades_img"
                border={1} borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom variant="h5">Serenades</Typography>
           <Typography paragraph variant="body2">
@@ -31,7 +31,7 @@ export const BringTheFunBlock = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={2.5}>
-          <Box width="100%" component="img" src={Entertainment_img} alt="Entertainment_img"
+          <Box width="100%" component="img" src={Senses_img} alt="Senses_img"
                border={1} borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom variant="h5">Senses</Typography>
           <Typography paragraph variant="body2">
