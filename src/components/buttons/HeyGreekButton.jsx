@@ -12,7 +12,7 @@ export const HeyGreekButton = ({ caption, children, onClick, link, icon }) => {
       {icon ? <Box component="img" pr={1} src={icon} alt="icon"/> : <Add/>}
       <Box display="flex" flexDirection="column">
         <Typography fontSize={10} align="left">{caption}</Typography>
-        <Typography fontSize={15} fontWeight={500} align="left">{children}</Typography>
+        <Typography fontSize={14} fontWeight={500} align="left">{children}</Typography>
       </Box>
     </Button>
   );

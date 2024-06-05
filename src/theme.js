@@ -35,5 +35,9 @@ export const theme = createTheme({
       fontFamily: 'Winner',
       fontWeight: 800,
     },
+    h5: {
+      fontFamily: 'Winner',
+      fontWeight: 800,
+    },
   }
 });
