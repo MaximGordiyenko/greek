@@ -48,12 +48,12 @@ export const Footer = () => {
       
       <Divider sx={{ width: '100%', my: 4, mx: 'auto', borderColor: '#FAFAFA4D' }}/>
       
-      <Grid item lg={12} container display="flex" justifyContent="space-between">
-        <Grid item lg={7}>
+      <Grid item xs={12} lg={12} container display="flex" justifyContent="space-between">
+        <Grid item xs={12} lg={7} display="flex" sx={{ justifyContent: { xs: 'center', lg: 'space-between' } }}>
           <Typography color="#fafafa">HeyGreek© 2024 All rights reserved</Typography>
         </Grid>
         
-        <Grid item lg={5} display="flex" justifyContent="space-between">
+        <Grid item xs={12} lg={5} display="flex" sx={{ justifyContent: { xs: 'center', lg: 'space-between' } }}>
           <Grid item lg="auto">
             <LinkCSS to="#">FAQ</LinkCSS>
           </Grid>
