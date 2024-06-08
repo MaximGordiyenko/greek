@@ -20,23 +20,23 @@ export const theme = createTheme({
     fontWeightMedium: 500,
     fontWeightBold: 700,
     h1: {
-      fontFamily: 'Winner',
+      fontFamily: 'WinnerCondExtraBold',
       fontWeight: 800,
     },
     h2: {
-      fontFamily: 'Winner',
+      fontFamily: 'WinnerCondExtraBold',
       fontWeight: 800,
     },
     h3: {
-      fontFamily: 'Winner',
+      fontFamily: 'WinnerCondExtraBold',
       fontWeight: 800,
     },
     h4: {
-      fontFamily: 'Winner',
+      fontFamily: 'WinnerCondExtraBold',
       fontWeight: 800,
     },
     h5: {
-      fontFamily: 'Winner',
+      fontFamily: 'WinnerCondExtraBold',
       fontWeight: 800,
     },
   }
