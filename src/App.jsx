@@ -6,7 +6,7 @@ import { NetworkingPage } from './pages/networking-page/NetworkingPage.jsx';
 import { TechPage } from './pages/tech-page/TechPage.jsx';
 import { AboutPage } from './pages/about-page/AboutPage.jsx';
 import './App.css';
-import './assets/fonts.css';
+import '../public/fonts.css';
 
 export const App = () => {
   

@@ -1,62 +1,62 @@
 @font-face {
   font-family: 'Rany';
-  src: url('/fonts/Rany.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/Rany.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: url('/fonts/RanyBold.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/RanyBold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: url('src/assets/fonts/RanyBoldItalic.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/RanyBoldItalic.otf') format('opentype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: url('/fonts/RanyItalic.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/RanyItalic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: url('/fonts/RanyLight.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/RanyLight.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: url('/fonts/RanyLightItalic.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/RanyLightItalic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: url('/fonts/RanyMedium.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/RanyMedium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: url('/fonts/RanyMediumItalic.otf') format('opentype');
+  src: local('Rany'), url('@/assets/fonts/RanyMediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Winner';
-  src: url('/fonts/Winner-CondExtraBold.ttf') format('truetype');
+  src: local('Rany'), url('@/assets/fonts/Winner-CondExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
