@@ -1,48 +1,48 @@
 @font-face {
   font-family: 'Rany';
-  src: local("Rany"), url('./assets/fonts/Rany.otf') format('opentype');
+  src: local("Rany"), url('../public/fonts/Rany.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: local("Rany"), url('./assets/fonts/RanyBold.otf') format('opentype');
+  src: local("Rany"), url('../public/fonts/RanyBold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: local("Rany"), url('./assets/fonts/RanyBoldItalic.otf') format('opentype');
+  src: local("Rany"), url('../public/fonts/RanyBoldItalic.otf') format('opentype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: local("Rany"), url('./assets/fonts/RanyItalic.otf') format('opentype');
+  src: local("Rany"), url('../public/fonts/RanyItalic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: local("Rany"), url('./assets/fonts/RanyLight.otf') format('opentype');
+  src: local("Rany"), url('../public/fonts/RanyLight.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: local("Rany"), url('./assets/fonts/RanyLightItalic.otf') format('opentype');
+  src: local("Rany"), url('../public/fonts/RanyLightItalic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Rany';
-  src: local("Rany"), url('./assets/fonts/RanyMedium.otf') format('opentype');
+  src: local("Rany"), url('../public/fonts/RanyMedium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
@@ -50,23 +50,24 @@
 @font-face {
   font-family: 'Rany';
   src: local("Rany"),
-  url('./assets/fonts/RanyMediumItalic.otf') format('opentype');
+  url('../public/fonts/RanyMediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Winner';
-  src: local("Winner"), url('./assets/fonts/Winner-CondExtraBold.ttf') format('truetype');
+  src: local("Winner"), url('../public/fonts/WinnerCondExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 :root {
-  font-family: Winner-CondExtraBold, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Winner-CondExtraBold, Rany, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body {
+  font-family: Winner-CondExtraBold, Rany, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
