@@ -4,7 +4,7 @@ import HeyGreekLogoFooter from '../../assets/HeyGreekLogoFooter.webp';
 import Facebook_icon from '../../assets/facebook.webp';
 import Tik_tok_icon from '../../assets/tiktok.webp';
 import Instagram_icon from '../../assets/instagram.webp';
-import { HeyGreekButton } from '../buttons/HeyGreekButton.jsx';
+import { HeyGreekIconButton } from '../buttons/HeyGreekIconButton.jsx';
 import Apple_logo from '../../assets/Apple_logo.webp';
 import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
 
@@ -34,13 +34,13 @@ export const Footer = () => {
           </Grid>
           
           <Grid item xs={12} lg={8} display="flex" justifyContent="space-between">
-            <HeyGreekButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+            <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
               App Store
-            </HeyGreekButton>
+            </HeyGreekIconButton>
             
-            <HeyGreekButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+            <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
               Google Play
-            </HeyGreekButton>
+            </HeyGreekIconButton>
           </Grid>
         </Grid>
       

@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import { AppBar, IconButton, Container, Box, Drawer, Divider, Typography, Grid } from "@mui/material";
+import { AppBar, IconButton, Container, Box, Drawer, Divider, Grid } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 import { HeaderLogoIcon } from '../../Icons/HeaderLogoIcon.jsx';
 import { Logo } from '../../Logos/Logo.jsx';
 import { Navigation } from './Navigation.jsx';
-import { HeyGreekButton } from '../buttons/HeyGreekButton.jsx';
+import { HeyGreekIconButton } from '../buttons/HeyGreekIconButton.jsx';
 import Apple_logo from '../../assets/Apple_logo.webp';
 import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
 
@@ -68,7 +68,7 @@ export const Header = () => {
               </IconButton>
             </Box>
             
-            <Divider sx={{ mb: 1 }}/>
+            <Divider/>
             
             <Navigation
               pages={pages}
@@ -78,16 +78,17 @@ export const Header = () => {
               isDivider={true}
             />
             
-            <Grid item container xs={12} display="flex" justifyContent="center" alignItems="center" bgcolor="#FBBC04" py={26} px={2}>
-              <Grid item xs={10} my={2}>
-                <HeyGreekButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+            <Grid item container xs={12} display="flex" justifyContent="center" alignItems="center" bgcolor="#FBBC04"
+                  px={2}>
+              <Grid item xs={10} xl={4} sm={4} md={4} lg={6} my={2}>
+                <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
                   App Store
-                </HeyGreekButton>
+                </HeyGreekIconButton>
               </Grid>
-              <Grid item xs={10} my={2}>
-                <HeyGreekButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+              <Grid item xs={10} xl={4} sm={4} md={4} lg={6} my={2}>
+                <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
                   Google Play
-                </HeyGreekButton>
+                </HeyGreekIconButton>
               </Grid>
             </Grid>
           </Box>

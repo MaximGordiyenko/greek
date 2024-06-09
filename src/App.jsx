@@ -1,4 +1,4 @@
-import { HomePage } from './pages/Home-page/HomePage.jsx';
+import { HomePage } from './pages/home-page/HomePage.jsx';
 import { Routes, BrowserRouter, Route } from 'react-router-dom';
 import { Layout } from './components/layouts/Layout.jsx';
 import { DatingPage } from './pages/dating-page/DatingPage.jsx';
