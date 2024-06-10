@@ -1,4 +1,4 @@
-import { BackgroundGrid } from '../Home-page/ui.styles.js';
+import { BackgroundGrid } from '../home-page/ui.styles.js';
 import Pattern_Bolts from '../../assets/Pattern_Bolts.webp';
 import { Grid, Typography, Box } from '@mui/material';
 import Puzzle_img from '../../assets/Puzzle_img.webp';
@@ -6,7 +6,7 @@ import Puzzle_img from '../../assets/Puzzle_img.webp';
 export const OurMissionBlock = () => {
   return (
     <BackgroundGrid container img={Pattern_Bolts} repeat>
-      <Grid item container display="flex" justifyContent="space-evenly" alignItems="center"
+      <Grid item container display="flex" alignItems="center"
             sx={{ px: { xs: 4, lg: 38 }, py: { xs: 6 } }}>
         <Grid item xs={12} sm={12} md={12} lg={4}>
           <Typography gutterBottom variant="h3">Our mission is simple...</Typography>

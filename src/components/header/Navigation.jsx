@@ -17,7 +17,7 @@ export const Navigation = ({ pages, fontSize, fontWeight, isDivider }) => {
             divider={isDivider}
             selected={isActive}
             component={Link}
-            sx={{ background: 'none', py: { xs: 3, lg: 2 }, pl: { xs: 4, lg: 2 } }}
+            sx={{ background: 'none', py: { xs: 2, lg: 2 }, pl: { xs: 4, lg: 2 } }}
             to={`/${page.toLowerCase()}`}>
             <ListItemText
               primary={

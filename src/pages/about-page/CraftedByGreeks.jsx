@@ -1,7 +1,7 @@
-import { BackgroundGrid, Wrapper } from '../Home-page/ui.styles.js';
+import { BackgroundGrid, Wrapper } from '../home-page/ui.styles.js';
 import { Typography, Grid } from '@mui/material';
 import btm_img_2 from '../../assets/btm_img-2.webp';
-import { HeyGreekButton } from '../../components/buttons/HeyGreekButton.jsx';
+import { HeyGreekIconButton } from '../../components/buttons/HeyGreekIconButton.jsx';
 import Apple_logo from '../../assets/Apple_logo.webp';
 import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
 
@@ -21,14 +21,14 @@ export const CraftedByGreeks = () => {
         </Grid>
         <Grid item container xs={12} sm={12} md={12} lg={12} mx="auto" display="flex" justifyContent="space-around">
           <Grid item xs={12} sm={12} md={6} lg={5}>
-            <HeyGreekButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+            <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
               App Store
-            </HeyGreekButton>
+            </HeyGreekIconButton>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={5}>
-            <HeyGreekButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+            <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
               Google Play
-            </HeyGreekButton>
+            </HeyGreekIconButton>
           </Grid>
         </Grid>
       </Grid>
