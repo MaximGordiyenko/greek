@@ -29,7 +29,7 @@ export const Header = () => {
     <AppBar position="static" sx={{ color: '#000', background: '#fafafa' }}>
       <Container maxWidth="lg" sx={{ display: "flex", justifyContent: "space-between", py: 1 }}>
         <Logo/>
-        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+        <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
           <Navigation
             pages={pages}
             fontSize={16}
@@ -72,20 +72,20 @@ export const Header = () => {
             
             <Navigation
               pages={pages}
-              fontSize={32}
+              fontSize={30}
               fontWeight={500}
               color="#282C3880"
               isDivider={true}
             />
             
-            <Grid item container xs={12} display="flex" justifyContent="center" alignItems="center" bgcolor="#FBBC04"
-                  px={2}>
-              <Grid item xs={10} xl={4} sm={4} md={4} lg={6} my={2}>
+            <Grid item container xs={12} justifyContent="center" alignItems="center" bgcolor="#FBBC04"
+                  px={2} py={6}>
+              <Grid item xs={10} sm={4} md={4} lg={6} my={2}>
                 <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
                   App Store
                 </HeyGreekIconButton>
               </Grid>
-              <Grid item xs={10} xl={4} sm={4} md={4} lg={6} my={2}>
+              <Grid item xs={10} sm={4} md={4} lg={6} my={2}>
                 <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
                   Google Play
                 </HeyGreekIconButton>
