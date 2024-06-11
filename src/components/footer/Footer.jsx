@@ -10,17 +10,16 @@ import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
 
 export const Footer = () => {
   return (
-    <GridCSS container sx={{ px: { xs: 4, lg: 18 }, py: 4 }} component="footer" display="flex"
-             justifyContent="space-between">
+    <GridCSS container component="footer" justifyContent="space-between" sx={{ px: { xs: 4, lg: 18 }, py: 4 }}>
       
-      <Grid item xs={12} lg={12} container>
-        <Grid item xs={12} lg={6} display="flex" sx={{ justifyContent: { xs: 'space-evenly', lg: 'space-between' } }}>
-          <Box component="img" width="25%" src={HeyGreekLogoFooter} alt="HeyGreek"/>
+      <Grid item container xs={12} sm={12} md={12} lg={12} justifyContent="space-between">
+        <Grid item xs={12} sm={12} md={2} lg={2} sx={{ textAlign: { xs: "center", sm: "center", lg: 'space-between' } }}>
+          <Box component="img" src={HeyGreekLogoFooter} alt="HeyGreek"
+               sx={{ width: { xs: '50%', sm: '25%', md: '100%', lg: "100%" } }}/>
         </Grid>
         
-        <Grid item xs={12} lg={6} container display="flex" justifyContent="space-between">
-          
-          <Grid item xs={12} lg={2} container display="flex" alignItems="center"
+        <Grid item container xs={12} sm={12} md={8} lg={6} sx={{ justifyContent: { xs: 'space-evenly', lg: 'space-between' } }}>
+          <Grid item xs={12} sm={5} md={5} lg={3} container alignItems="center"
                 sx={{ justifyContent: { xs: 'space-evenly', lg: 'space-between' } }}>
             <Grid item lg="auto" xs="auto">
               <Box component="img" src={Facebook_icon} alt="Facebook_icon"/>
@@ -33,35 +32,48 @@ export const Footer = () => {
             </Grid>
           </Grid>
           
-          <Grid item xs={12} lg={8} display="flex" justifyContent="space-between">
-            <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
-              App Store
-            </HeyGreekIconButton>
-            
-            <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
-              Google Play
-            </HeyGreekIconButton>
+          <Grid item container xs={12} sm={8} md={7} lg={8} sx={{ justifyContent: { xs: 'space-evenly', lg: 'space-between' } }}>
+            <Grid item xs={5.8} sm={5} md={6} lg={5}>
+              <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+                App Store
+              </HeyGreekIconButton>
+            </Grid>
+            <Grid item xs={5.8} sm={5} md={5} lg={5}>
+              <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+                Google Play
+              </HeyGreekIconButton>
+            </Grid>
           </Grid>
         </Grid>
-      
       </Grid>
       
       <Divider sx={{ width: '100%', my: 4, mx: 'auto', borderColor: '#FAFAFA4D' }}/>
       
-      <Grid item xs={12} lg={12} container display="flex" justifyContent="space-between">
-        <Grid item xs={12} lg={7} display="flex" sx={{ justifyContent: { xs: 'center', lg: 'space-between' } }}>
+      <Grid item container xs={12} md={12} lg={12}  justifyContent="space-between">
+        <Grid item xs={12} sm={12} md={6} lg={7} sx={{ justifyContent: { lg: 'space-between' }, textAlign: { xs: 'center'} }}>
           <Typography color="#fafafa">HeyGreek© 2024 All rights reserved</Typography>
         </Grid>
         
-        <Grid item xs={12} lg={5} display="flex" sx={{ justifyContent: { xs: 'center', lg: 'space-between' } }}>
+        <Grid item xs={12} sm={12} md={6} lg={5} display="flex"
+              sx={{ justifyContent: { xs: 'space-evenly', md: 'space-between' } }}>
           <Grid item lg="auto">
-            <LinkCSS to="#">FAQ</LinkCSS>
+            <LinkCSS to="#">
+              <Typography>FAQ</Typography>
+            </LinkCSS>
           </Grid>
           <Grid item lg="auto">
-            <LinkCSS to="#">Privacy Policy</LinkCSS>
+            <LinkCSS to="#">
+              <Typography>
+                Privacy Policy
+              </Typography>
+            </LinkCSS>
           </Grid>
           <Grid item lg="auto">
-            <LinkCSS to="#">Terms and Conditions</LinkCSS>
+            <LinkCSS to="#">
+              <Typography>
+                Terms and Conditions
+              </Typography>
+            </LinkCSS>
           </Grid>
         </Grid>
       </Grid>

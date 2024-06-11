@@ -2,12 +2,12 @@ import { Add } from '@mui/icons-material';
 import { Button, Typography, Box } from '@mui/material';
 import { blue } from '@mui/material/colors';
 
-export const HeyGreekIconButton = ({ caption, children, onClick, link, icon }) => {
+export const HeyGreekIconButton = ({ caption, children, onClick, link, icon, bg }) => {
   return (
     <Button
       variant="contained"
       href={link}
-      sx={{ border: '1px solid ', background: '#fafafa', color: blue['900'],
+      sx={{ border: '1px solid ', background: bg ? bg : '#fafafa', color: blue['900'],
         width: '100%', px: 1 }}
       onClick={onClick}>
       {icon ? <Box component="img" pr={1} src={icon} alt="icon"/> : <Add/>}
