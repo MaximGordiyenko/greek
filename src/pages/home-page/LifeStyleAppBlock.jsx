@@ -10,9 +10,9 @@ import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
 
 export const LifeStyleAppBlock = () => {
   return (
-    <BackgroundGrid container img={Hero_BG} height>
+    <BackgroundGrid container img={Hero_BG} height={800}>
       <Grid item xs={11} sm={8} md={10} lg={6} textAlign="center" mx="auto"
-            sx={{ mt: { xs: 32, sm: 40, md: 60, lg: 70 } }}>
+            sx={{ mt: { xs: 40, sm: 50, md: 45, lg: 40 } }}>
         
         <Box component="img" src={Hey_greek_white} alt="Hey_greek_white" py={4} sx={{ width: { sm: 200, lg: 300 } }}/>
         <Typography variant="h1" color="#fafafa" sx={{ fontSize: { xs: 50, sm: 50, md: 70, lg: 80 } }}>
