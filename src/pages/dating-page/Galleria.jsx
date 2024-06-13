@@ -9,8 +9,8 @@ import Mosaic_7 from '../../assets/Mosaic_7.webp';
 import Mosaic_8 from '../../assets/Mosaic_8.webp';
 import Mosaic_9 from '../../assets/Mosaic_9.webp';
 import { HeyGreekIconButton } from '../../components/buttons/HeyGreekIconButton.jsx';
-import Apple_logo from '../../assets/Apple_logo.webp';
-import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
+import { GooglePlayMarketIcon } from '../../components/icons/GooglePlayMarketIcon.jsx';
+import { AppleStoreIcon } from '../../components/icons/AppleStoreIcon.jsx';
 
 export const Galleria = () => {
   return (
@@ -38,13 +38,15 @@ export const Galleria = () => {
         </Grid>
         
         <Grid item xs={12} sm={12} md={12} lg={11} container mx="auto" display="flex" justifyContent="space-around">
-          <Grid item xs={5.4} sm={5} md={5.8} lg={5} mx={0}>
-            <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+          <Grid item xs={5.4} sm={5} md={5.8} lg={5.5} mx={0}>
+            <HeyGreekIconButton link="https://apple.com" caption="Download on the"
+                                icon={<AppleStoreIcon color="#03237A"/>}>
               App Store
             </HeyGreekIconButton>
           </Grid>
-          <Grid item xs={5.4} sm={5} md={5.8} lg={5} mx={0}>
-            <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+          <Grid item xs={5.4} sm={5} md={5.8} lg={5.5} mx={0}>
+            <HeyGreekIconButton link="https://google.com" caption="Get it on"
+                                icon={<GooglePlayMarketIcon color="#03237A"/>}>
               Google Play
             </HeyGreekIconButton>
           </Grid>

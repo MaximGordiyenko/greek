@@ -8,8 +8,8 @@ import { HeaderLogoIcon } from '../../Icons/HeaderLogoIcon.jsx';
 import { Logo } from '../../Logos/Logo.jsx';
 import { Navigation } from './Navigation.jsx';
 import { HeyGreekIconButton } from '../buttons/HeyGreekIconButton.jsx';
-import Apple_logo from '../../assets/Apple_logo.webp';
-import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
+import { AppleStoreIcon } from '../icons/AppleStoreIcon.jsx';
+import { GooglePlayMarketIcon } from '../icons/GooglePlayMarketIcon.jsx';
 
 export const Header = () => {
   const pages = ['Home', 'Dating', 'Networking', 'Tech', 'About'];
@@ -81,12 +81,14 @@ export const Header = () => {
             <Grid item container xs={12} justifyContent="center" alignItems="center" bgcolor="#FBBC04"
                   px={2} py={6}>
               <Grid item xs={10} sm={4} md={4} lg={6} my={2}>
-                <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+                <HeyGreekIconButton link="https://apple.com" caption="Download on the"
+                                    icon={<AppleStoreIcon color="#03237A"/>}>
                   App Store
                 </HeyGreekIconButton>
               </Grid>
               <Grid item xs={10} sm={4} md={4} lg={6} my={2}>
-                <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+                <HeyGreekIconButton link="https://google.com" caption="Get it on"
+                                    icon={<GooglePlayMarketIcon color="#03237A"/>}>
                   Google Play
                 </HeyGreekIconButton>
               </Grid>

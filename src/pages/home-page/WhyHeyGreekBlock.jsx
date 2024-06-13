@@ -2,7 +2,7 @@ import { Box, Typography, Grid } from '@mui/material';
 
 import Pattern_Bolts from '../../assets/Pattern_Bolts.webp';
 import Greeks_img from '../../assets/Greeks_img.webp';
-import Matching_img from '../../assets/Matching_img.webp';
+import Matching_img from '../../assets/Matching_img.png';
 import Entertainment_img from '../../assets/Entertainment_img.webp';
 import Community_img from '../../assets/Community_img.webp';
 

@@ -5,8 +5,8 @@ import { HeyGreekIconButton } from '../../components/buttons/HeyGreekIconButton.
 
 import Hero_BG from '../../assets/Hero_BG.webp';
 import Hey_greek_white from '../../assets/Hey_greek_white.webp';
-import Apple_logo from '../../assets/Apple_logo.webp';
-import PlayMarketLogo from '../../assets/PlayMarketLogo.webp';
+import { AppleStoreIcon } from '../../components/icons/AppleStoreIcon.jsx';
+import { GooglePlayMarketIcon } from '../../components/icons/GooglePlayMarketIcon.jsx';
 
 export const LifeStyleAppBlock = () => {
   return (
@@ -25,14 +25,18 @@ export const LifeStyleAppBlock = () => {
         <Grid item container xs={12} sm={10} md={8} lg={9} py={3}
               mx="auto" display="flex" justifyContent="space-evenly">
           
-          <Grid item xs={5.5} sm={5} md={4} lg={4.5}>
-            <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+          <Grid item xs={5.5} sm={5} md={4} lg={4}>
+            <HeyGreekIconButton
+              link="https://apple.com" caption="Download on the"
+              icon={<AppleStoreIcon color="#03237A"/>}>
               App Store
             </HeyGreekIconButton>
           </Grid>
           
-          <Grid item xs={5.5} sm={5} md={4} lg={4.5}>
-            <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+          <Grid item xs={5.5} sm={5} md={4} lg={4}>
+            <HeyGreekIconButton
+              link="https://google.com" caption="Get it on"
+              icon={<GooglePlayMarketIcon color="#03237A"/>}>
               Google Play
             </HeyGreekIconButton>
           </Grid>

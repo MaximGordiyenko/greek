@@ -1,8 +1,8 @@
 import { Grid, Typography } from '@mui/material';
 import { BackgroundGrid, Wrapper } from '../pages/home-page/ui.styles.js';
 import { HeyGreekIconButton } from '../components/buttons/HeyGreekIconButton.jsx';
-import Apple_logo from '../assets/Apple_logo.webp';
-import PlayMarketLogo from '../assets/PlayMarketLogo.webp';
+import { AppleStoreIcon } from '../components/icons/AppleStoreIcon.jsx';
+import { GooglePlayMarketIcon } from '../components/icons/GooglePlayMarketIcon.jsx';
 
 export const PreFooterBlock = ({ img, head, body }) => {
   return (
@@ -19,14 +19,16 @@ export const PreFooterBlock = ({ img, head, body }) => {
           <Typography paragraph variant="body1" sx={{ fontSize: { xs: 14 }, pt: 1 }}>{body}</Typography>
         </Grid>
         
-        <Grid container justifyContent="center">
-          <Grid item xs={12} sm={5} md={3.8} lg={4} m={1}>
-            <HeyGreekIconButton link="https://apple.com" caption="Download on the" icon={Apple_logo}>
+        <Grid item container justifyContent="center">
+          <Grid item xs={12} sm={5.2} md={4.9} lg={4.5} m={1}>
+            <HeyGreekIconButton link="https://apple.com" caption="Download on the"
+                                icon={<AppleStoreIcon color="#03237A"/>}>
               App Store
             </HeyGreekIconButton>
           </Grid>
-          <Grid item xs={12} sm={5} md={3.8} lg={4} m={1}>
-            <HeyGreekIconButton link="https://google.com" caption="Get it on" icon={PlayMarketLogo}>
+          <Grid item xs={12} sm={5.2} md={4.9} lg={4.5} m={1}>
+            <HeyGreekIconButton link="https://google.com" caption="Get it on"
+                                icon={<GooglePlayMarketIcon color="#03237A"/>}>
               Google Play
             </HeyGreekIconButton>
           </Grid>
