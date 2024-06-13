@@ -19,7 +19,7 @@ export const HomePage = () => {
       <WhyHeyGreekBlock/>
       
       <TextScroller
-        text=" * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * "
+        text=" * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * "
       />
       
       <SuccessStoriesBlock/>

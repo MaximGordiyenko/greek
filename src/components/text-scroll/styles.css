@@ -18,17 +18,7 @@
   width: 100%;
   height: 100%;
   white-space: nowrap;
-  /*transition: all 1s ease;*/
-}
-.m-scroll__title {
-  display: flex;
-  animation: scrollText 20s infinite linear;
-}
-.m-scroll__title h1 {
-  /*margin: 0;*/
-  font-size: 36px;
-  color: #282C38;
-  /*transition: all 2s ease;*/
+  animation: scrollText 15s infinite linear;
 }
 
 @keyframes scrollText {

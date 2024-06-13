@@ -30,7 +30,7 @@ export const WhyHeyGreekBlock = () => {
         </Grid>
         <Grid item xs={12} sm={7} md={8} lg={2.5} py={3}>
           <Box width="100%" component="img" src={Matching_img} alt="Matching_img"
-               border={1} borderColor="primary" borderRadius={3}/>
+               borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom variant="h6">AI Matching System</Typography>
           <Typography paragraph variant="body2">
             Advanced AI matching system, designed to connect you with compatible Greeks based on your interests,

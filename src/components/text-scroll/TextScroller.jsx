@@ -1,5 +1,5 @@
-import './styles.css';
 import { Typography } from '@mui/material';
+import './styles.css';
 
 export const TextScroller = ({ text }) => {
   return (
