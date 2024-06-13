@@ -4,7 +4,7 @@ import { BackgroundGrid } from './ui.styles.js';
 import { HeyGreekIconButton } from '../../components/buttons/HeyGreekIconButton.jsx';
 
 import Hero_BG from '../../assets/Hero_BG.webp';
-import Hey_greek_white from '../../assets/Hey_greek_white.webp';
+import hey_greek_logo from '../../assets/heygreek.svg';
 import { AppleStoreIcon } from '../../components/icons/AppleStoreIcon.jsx';
 import { GooglePlayMarketIcon } from '../../components/icons/GooglePlayMarketIcon.jsx';
 
@@ -14,7 +14,7 @@ export const LifeStyleAppBlock = () => {
       <Grid item xs={11} sm={8} md={10} lg={6} textAlign="center" mx="auto"
             sx={{ mt: { xs: 40, sm: 50, md: 45, lg: 40 } }}>
         
-        <Box component="img" src={Hey_greek_white} alt="Hey_greek_white" py={4} sx={{ width: { sm: 200, lg: 300 } }}/>
+        <Box component="img" src={hey_greek_logo} alt="Hey_greek_white" py={4} sx={{ width: { sm: 200, lg: 250 } }}/>
         <Typography variant="h1" color="#fafafa" sx={{ fontSize: { xs: 50, sm: 50, md: 70, lg: 80 } }}>
           Ultimate Greek Lifestyle App
         </Typography>

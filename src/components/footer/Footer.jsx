@@ -38,7 +38,7 @@ export const Footer = () => {
             </Grid>
           </Grid>
           
-          <Grid item container xs={12} sm={8} md={8.8} lg={8}
+          <Grid item container xs={12} sm={8} md={8.8} lg={8.3}
                 sx={{ justifyContent: { xs: 'space-evenly', lg: 'space-between' }, pb: { xs: 4, md: 0 } }}>
             <Grid item xs={5.6} sm={4} md={5} lg={5.6}>
               <HeyGreekIconButton

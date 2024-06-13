@@ -1,4 +1,4 @@
-import { Typography, Button, Grid } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 
 import { BackgroundGrid, Wrapper } from './ui.styles.js';
 
@@ -6,7 +6,6 @@ import Pattern_Stars from '../../assets/Pattern_Stars.webp';
 import Dating_omg from '../../assets/Dating_omg.webp';
 import Connecting_img from '../../assets/Connecting_img.webp';
 import { HeyGreekButton } from '../../components/buttons/HeyGreekButton.jsx';
-import { TextScroller } from '../../components/text-scroll/TextScroller.jsx';
 
 export const MoreThenDatingBlock = () => {
   return (

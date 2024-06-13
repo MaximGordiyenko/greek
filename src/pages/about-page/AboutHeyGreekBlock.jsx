@@ -1,6 +1,5 @@
 import About_Hero from '../../assets/About_Hero.webp';
-import Hey_greek_white from '../../assets/Hey_greek_white.webp';
-import { Grid, Box, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { BackgroundGrid } from '../home-page/ui.styles.js';
 
 export const AboutHeyGreekBlock = () => {

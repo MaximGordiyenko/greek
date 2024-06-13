@@ -4,7 +4,7 @@ export const HeyGreekButton = ({ fullWidth, mt }) => {
   return (
     <Button
       sx={{
-        border: 1,
+        border: 1.5,
         borderRadius: 1,
         borderColor: '#282C38',
         background: '#FFB800',

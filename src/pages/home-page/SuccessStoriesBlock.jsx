@@ -4,7 +4,7 @@ import Pattern_Asterisk from '../../assets/Pattern_Asterisk.webp';
 import Story1_img from '../../assets/Story1_img.webp';
 import Story2_img from '../../assets/Story2_img.webp';
 import Story3_img from '../../assets/Story3_img.webp';
-import Play_icon from '../../assets/Play_icon.webp';
+import Play_icon from '../../assets/playButton.svg';
 
 export const SuccessStoriesBlock = () => {
   return (
@@ -22,7 +22,7 @@ export const SuccessStoriesBlock = () => {
                  onClick={() => console.log('click')}/>
           </BoxImage>
           <Box p={2}>
-            <Typography paragraph variant="caption" color="#282C38">20 February 2023</Typography>
+            <Typography paragraph variant="caption" color="#282C3899">20 February 2023</Typography>
             <Typography variant="body2">
               “After downloading HeyGreek, we suddenly discovered that we are neighbors... After a couple of drinks, I
               agreed to go for coffee with Nathan)...
@@ -36,7 +36,7 @@ export const SuccessStoriesBlock = () => {
                  onClick={() => console.log('click')}/>
           </BoxImage>
           <Box p={2}>
-            <Typography paragraph variant="caption" color="#282C38">25 March 2024</Typography>
+            <Typography paragraph variant="caption" color="#282C3899">25 March 2024</Typography>
             <Typography variant="body2">
               “Thanks to networking on HeyGrik, I was able to find the most interesting sisterhood at the university for
               myself. There's no limit to my happiness!!!
@@ -50,7 +50,7 @@ export const SuccessStoriesBlock = () => {
                  onClick={() => console.log('click')}/>
           </BoxImage>
           <Box p={2}>
-            <Typography paragraph variant="caption" color="#282C38">15 April 2024</Typography>
+            <Typography paragraph variant="caption" color="#282C3899">15 April 2024</Typography>
             <Typography variant="body2">
               “HeyGreek truly brings people together... We met at a shared experience, something like a rock concert,
               and after 2 months, he proposed to me. Can you believe it?...
