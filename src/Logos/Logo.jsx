@@ -1,16 +1,18 @@
 import { HeaderLogoIcon } from '../Icons/HeaderLogoIcon.jsx';
 import { Box, Typography, Stack, Divider, styled } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export const Logo = () => {
   return (
     <Stack
-      direction="row" spacing={2}
+      direction="row" spacing={2} alignItems="center"
       divider={
         <Divider orientation="vertical"
-                 style={{ marginTop: "14px" }}
-                 sx={{ height: "50%", borderColor: 'black', display: { xs: 'none', lg: 'flex' } }}/>
+                 sx={{ height: "50%", borderColor: 'black', display: { xs: 'none', lg: 'flex' }, mt: 2 }}/>
       }>
-      <HeaderLogoIcon className="display: flex"/>
+      <Link to='/home'>
+        <HeaderLogoIcon className="display: flex"/>
+      </Link>
       <Box sx={{ width: 120, display: 'flex', alignItems: 'center' }}>
         <Typography
           paragraph

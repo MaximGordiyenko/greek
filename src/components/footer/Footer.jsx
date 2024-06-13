@@ -25,7 +25,7 @@ export const Footer = () => {
                 flexDirection: { xs: 'column-reverse', md: 'row' }
               }}>
           
-          <Grid item container xs={6} sm={5} md={3} lg={2.5} alignItems="center"
+          <Grid item container xs={6} sm={4} md={3} lg={2.5} alignItems="center"
                 sx={{ justifyContent: { xs: 'space-evenly', lg: 'space-between' }, pb: { xs: 0, md: 0 } }}>
             <Grid item>
               <Box component="img" src={facebook} alt="Facebook_icon"/>
@@ -60,7 +60,7 @@ export const Footer = () => {
       
       <Divider sx={{ width: '100%', my: 4, mx: 'auto', borderColor: '#FAFAFA4D' }}/>
       
-      <Grid item container xs={12} md={12} lg={12} justifyContent="space-between" wrap="no-wrap" alignItems="center"
+      <Grid item container xs={12} md={12} lg={12} justifyContent="space-between" wrap="nowrap" alignItems="center"
             sx={{ flexDirection: { xs: 'column-reverse', md: 'row' } }}>
         
         <Grid item xs={12} sm={12} md={6} lg={3}
