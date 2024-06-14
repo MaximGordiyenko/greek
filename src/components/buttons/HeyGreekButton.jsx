@@ -1,8 +1,8 @@
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, styled } from '@mui/material';
 
 export const HeyGreekButton = ({ fullWidth, mt }) => {
   return (
-    <Button
+    <ButtonCSS
       sx={{
         border: 1.5,
         borderRadius: 1,
@@ -23,6 +23,17 @@ export const HeyGreekButton = ({ fullWidth, mt }) => {
         }}>
         Learn more
       </Typography>
-    </Button>
+    </ButtonCSS>
   );
 };
+
+
+const ButtonCSS = styled(Button)(({ theme }) => ({
+  transition: 'transform 1s ease-in-out',
+  '&:hover': {
+    opacity: 0.9,
+    backgroundColor: '#FFB800',
+    transform: 'translateY(-4px)',
+    transition: 'transform 1s ease',
+  },
+}));

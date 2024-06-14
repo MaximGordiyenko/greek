@@ -73,7 +73,7 @@ export const Footer = () => {
         <Grid item container xs={12} sm={12} md={6} lg={5}
               sx={{ justifyContent: { xs: 'space-evenly', md: 'space-between' } }}>
           <Grid item lg="auto">
-            <LinkCSS to="#">
+            <LinkCSS to="/faq">
               <Typography>FAQ</Typography>
             </LinkCSS>
           </Grid>

@@ -1,4 +1,4 @@
-import { HeaderLogoIcon } from '../Icons/HeaderLogoIcon.jsx';
+import { HeaderLogoIcon } from '../icons/HeaderLogoIcon.jsx';
 import { Box, Typography, Stack, Divider, styled } from '@mui/material';
 import { Link } from 'react-router-dom';
 

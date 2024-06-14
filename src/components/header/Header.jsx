@@ -4,8 +4,8 @@ import { AppBar, IconButton, Container, Box, Drawer, Divider, Grid } from "@mui/
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-import { HeaderLogoIcon } from '../../Icons/HeaderLogoIcon.jsx';
-import { Logo } from '../../Logos/Logo.jsx';
+import { HeaderLogoIcon } from '../../icons/HeaderLogoIcon.jsx';
+import { Logo } from '../../logos/Logo.jsx';
 import { Navigation } from './Navigation.jsx';
 import { HeyGreekIconButton } from '../buttons/HeyGreekIconButton.jsx';
 import { AppleStoreIcon } from '../icons/AppleStoreIcon.jsx';

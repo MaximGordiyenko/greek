@@ -1,4 +1,4 @@
-import { ListItemButton, ListItemText, Typography } from '@mui/material';
+import { ListItemButton, ListItemText, Typography, styled } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 
 export const Navigation = ({ pages, fontSize, fontWeight, isDivider }) => {
@@ -12,7 +12,7 @@ export const Navigation = ({ pages, fontSize, fontWeight, isDivider }) => {
         const isActive = currentPath === pagePath;
         
         return (
-          <ListItemButton
+          <ListItemButtonCSS
             key={page}
             divider={isDivider}
             selected={isActive}
@@ -22,16 +22,29 @@ export const Navigation = ({ pages, fontSize, fontWeight, isDivider }) => {
             <ListItemText
               primary={
                 <Typography
+                  sx={{ color: isActive ? '#03237A' : '#282C3880' }}
                   fontSize={fontSize}
-                  fontWeight={fontWeight}
-                  sx={{ color: isActive ? '#03237A' : '#282C3880' }}>
+                  fontWeight={fontWeight}>
                   {page}
                 </Typography>
               }
             />
-          </ListItemButton>
+          </ListItemButtonCSS>
         );
       })}
     </>
   );
 };
+
+const ListItemButtonCSS = styled(ListItemButton)(({ theme }) => ({
+  '&.Mui-selected': {
+    backgroundColor: 'transparent', // Remove the clicked effect
+  },
+  '&.Mui-focusVisible': {
+    backgroundColor: '#FAFAFA',
+  },
+  '&:hover': {
+    backgroundColor: 'transparent', // Change color on hover
+    color: 'transparent', // Change text color on hover if needed
+  },
+}));
