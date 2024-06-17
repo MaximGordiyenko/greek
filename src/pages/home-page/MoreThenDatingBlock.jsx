@@ -22,22 +22,22 @@ export const MoreThenDatingBlock = () => {
       <Grid item container>
         <BackgroundGrid item xs={12} sm={6} md={6} lg={6} height={500} img={Dating_omg}>
           <Wrapper textAlign="center" border={1} borderColor="primary" borderRadius={3}
-                   sx={{ mt: { xs: 36, sm: 34, lg: 36 }, mx: { xs: 2, sm: 5, md: 12, lg: 22 }, p: { xs: 2, lg: 2 } }}>
+                   sx={{ mt: { xs: 36, sm: 34, lg: 36 }, mx: { xs: 2, sm: 5, md: 12, lg: 'auto' }, p: { xs: 2, lg: 2 }, maxWidth: 360 }}>
             <Typography variant="h3" sx={{ fontSize: { sm: 35, lg: 35 } }}>Dating</Typography>
             <Typography paragraph variant="body1">
               Connect with Greek members nearby for meaningful relationships
             </Typography>
-            <HeyGreekButton>Learn more</HeyGreekButton>
+            <HeyGreekButton link="/dating">Learn more</HeyGreekButton>
           </Wrapper>
         </BackgroundGrid>
         <BackgroundGrid item xs={12} sm={6} md={6} lg={6} height={500} img={Connecting_img}>
           <Wrapper textAlign="center" border={1} borderColor="primary" borderRadius={3}
-                   sx={{ mt: { xs: 36, sm: 34, lg: 36 }, mx: { xs: 2, sm: 6, md: 12, lg: 22 }, p: { xs: 2, lg: 2 } }}>
+                   sx={{ mt: { xs: 36, sm: 34, lg: 36 }, mx: { xs: 2, sm: 6, md: 12, lg: 'auto' }, p: { xs: 2, lg: 2 }, maxWidth: 360 }}>
             <Typography variant="h3" sx={{ fontSize: { sm: 35, lg: 35 } }}>Connecting</Typography>
             <Typography paragraph variant="body1">
               Forge professional connections within the Greek community
             </Typography>
-            <HeyGreekButton>Learn more</HeyGreekButton>
+            <HeyGreekButton link="/networking">Learn more</HeyGreekButton>
           </Wrapper>
         </BackgroundGrid>
       </Grid>

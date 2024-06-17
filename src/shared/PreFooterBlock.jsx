@@ -9,10 +9,12 @@ export const PreFooterBlock = ({ img, head, body }) => {
     <BackgroundGrid container img={img}>
       <Wrapper textAlign="center" border={1} borderColor="primary" borderRadius={3}
                sx={{
+                 maxWidth: { lg: 540 },
                  mt: { xs: 45, sm: 40, md: 50, lg: 70 },
                  mb: 5,
-                 mx: { xs: 2, sm: 20, md: 30, lg: 55 },
-                 p: { xs: 2, lg: 3 } }}>
+                 mx: { xs: 2, sm: 20, md: 30, lg: 'auto' },
+                 p: { xs: 2, lg: 3 }
+               }}>
         
         <Grid item xs={12} sm={12} md={12} lg={12} textAlign="center">
           <Typography variant="h3" sx={{ fontSize: { xs: 24 } }}>{head}</Typography>

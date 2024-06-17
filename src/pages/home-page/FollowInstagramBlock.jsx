@@ -8,7 +8,7 @@ export const FollowInstagramBlock = () => {
   return (
     <BackgroundGrid container justifyContent="center" img={Pattern_Instagram} repeat>
       <Wrapper item sm={6} md={6} lg={4.8} container p={3} border={2} borderRadius={4}
-               sx={{ mx: { xs: 3, lg: 4 }, my: { xs: 6, md: 8, lg: 8 } }}>
+               sx={{ mx: { xs: 3, lg: 'auto' }, my: { xs: 6, md: 8, lg: 8 }, maxWidth: { lg: 600 } }}>
         <Box component="img" src={QR} width={150} height={150} alt="QR_Code" pr={4}
              sx={{ display: { xs: 'none', lg: 'flex' } }}
         />

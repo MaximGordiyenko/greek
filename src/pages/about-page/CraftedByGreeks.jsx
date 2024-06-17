@@ -12,9 +12,10 @@ export const CraftedByGreeks = () => {
             xs={11} sm={6} md={5} lg={3.6}
             sx={{
               background: '#fafafa',
+              maxWidth: { lg: 440 },
               mt: { xs: 36, sm: 42, md: 36, lg: 36 },
               mb: 4,
-              mx: { xs: 'auto', sm: 8, md: 10, lg: 12 },
+              mx: { xs: 'auto', sm: 8, md: 10 },
               p: { xs: 4, sm: 4, md: 6, lg: 4 }
             }}>
         

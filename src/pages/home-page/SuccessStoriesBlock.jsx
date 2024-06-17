@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BackgroundGrid } from './ui.styles.js';
 import { Box, Typography, Grid, styled } from '@mui/material';
 import Pattern_Asterisk from '../../assets/Pattern_Asterisk.webp';
@@ -5,21 +6,33 @@ import Story1_img from '../../assets/Story1_img.webp';
 import Story2_img from '../../assets/Story2_img.webp';
 import Story3_img from '../../assets/Story3_img.webp';
 import Play_icon from '../../assets/playButton.svg';
+import { ModalComponent } from '../../components/modal/ModalComponent.jsx';
 
 export const SuccessStoriesBlock = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isOpenModal2, setIsOpenModal2] = useState(false);
+  const [isOpenModal3, setIsOpenModal3] = useState(false);
+  
   return (
     <BackgroundGrid container img={Pattern_Asterisk} repeat>
       <Grid item xs={12} sm={12} md={12} lg={12} textAlign="center"
-            sx={{ pt: { xs: 4, lg: 10 }, px: { xs: 4, lg: 50 } }}>
+            sx={{ pt: { xs: 4, lg: 10 }, mx: { xs: 4, lg: 50 } }}>
         <Typography variant="h2">Success stories</Typography>
       </Grid>
       
       <Grid item container display="flex" justifyContent="space-evenly"
-            sx={{ px: { xs: 2, lg: 15 }, mt: 6, mb: 4 }}>
-        <Grid item xs={12} sm={6} md={6} lg={3.6} border={2} borderColor="primary" borderRadius={4} sx={{ mx: 2, mb: 6 }}>
-          <BoxImage img={Story1_img} height={600}>
+            sx={{ mx: { xs: 2, lg: 'auto' }, mt: 6, mb: 4, maxWidth: 1200 }}>
+        <Grid item xs={12} sm={6} md={6} lg={3.6} border={2} borderColor="primary" borderRadius={4}
+              sx={{ mx: 2, mb: 6 }}>
+          <BoxImage img={Story1_img} height={440}>
             <Box component="img" src={Play_icon} alt="Play_icon" position="absolute" bottom={15} right={15}
-                 onClick={() => console.log('click')}/>
+                 sx={{ cursor: 'pointer'}} onClick={() => setIsOpenModal3(true)}
+            />
+            <ModalComponent
+              url='https://www.youtube.com/watch?v=Fr_MHKIYBcg&ab_channel=MemeableData'
+              isOpenModal={isOpenModal3}
+              onClose={() => setIsOpenModal3(false)}
+            />
           </BoxImage>
           <Box p={2}>
             <Typography paragraph variant="caption" color="#282C3899">20 February 2023</Typography>
@@ -30,10 +43,17 @@ export const SuccessStoriesBlock = () => {
           </Box>
         </Grid>
         
-        <Grid item xs={12} sm={6} md={6} lg={3.6} border={2} borderColor="primary" borderRadius={4} sx={{ mx: 2, mb: 6 }}>
-          <BoxImage img={Story2_img} height={600}>
+        <Grid item xs={12} sm={6} md={6} lg={3.6} border={2} borderColor="primary" borderRadius={4}
+              sx={{ mx: 2, mb: 6 }}>
+          <BoxImage img={Story2_img} height={440}>
             <Box component="img" src={Play_icon} alt="Play_icon" position="absolute" bottom={15} right={15}
-                 onClick={() => console.log('click')}/>
+                 sx={{ cursor: 'pointer'}} onClick={() => setIsOpenModal2(true)}
+            />
+            <ModalComponent
+              url='https://www.youtube.com/watch?v=eYRgTj9MRLg&ab_channel=MemeableData'
+              isOpenModal={isOpenModal2}
+              onClose={() => setIsOpenModal2(false)}
+            />
           </BoxImage>
           <Box p={2}>
             <Typography paragraph variant="caption" color="#282C3899">25 March 2024</Typography>
@@ -44,10 +64,17 @@ export const SuccessStoriesBlock = () => {
           </Box>
         </Grid>
         
-        <Grid item xs={12} sm={6} md={6} lg={3.6} border={2} borderColor="primary" borderRadius={4} sx={{ mx: 2, mb: 6 }}>
-          <BoxImage img={Story3_img} height={600}>
+        <Grid item xs={12} sm={6} md={6} lg={3.6} border={2} borderColor="primary" borderRadius={4}
+              sx={{ mx: 2, mb: 6 }}>
+          <BoxImage img={Story3_img} height={440}>
             <Box component="img" src={Play_icon} alt="Play_icon" position="absolute" bottom={15} right={15}
-                 onClick={() => console.log('click')}/>
+                 sx={{ cursor: 'pointer'}} onClick={() => setIsOpenModal(true)}
+            />
+            <ModalComponent
+              url='https://www.youtube.com/watch?v=x3lypVnJ0HM&ab_channel=MemeableData'
+              isOpenModal={isOpenModal}
+              onClose={() => setIsOpenModal(false)}
+            />
           </BoxImage>
           <Box p={2}>
             <Typography paragraph variant="caption" color="#282C3899">15 April 2024</Typography>

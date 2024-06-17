@@ -7,6 +7,7 @@ import tiktok from '../../assets/tiktok.svg';
 import instagram from '../../assets/instagram.svg';
 import { AppleStoreIcon } from '../icons/AppleStoreIcon.jsx';
 import { GooglePlayMarketIcon } from '../icons/GooglePlayMarketIcon.jsx';
+import { SocialIcon } from './SocialIcon.jsx';
 
 export const Footer = () => {
   return (
@@ -28,13 +29,13 @@ export const Footer = () => {
           <Grid item container xs={6} sm={4} md={3} lg={2.5} alignItems="center"
                 sx={{ justifyContent: { xs: 'space-evenly', lg: 'space-between' }, pb: { xs: 0, md: 0 } }}>
             <Grid item>
-              <Box component="img" src={facebook} alt="Facebook_icon"/>
+              <SocialIcon src={facebook} alt="Facebook_icon"/>
             </Grid>
             <Grid item>
-              <Box component="img" src={tiktok} alt="Tik_tok_icon"/>
+              <SocialIcon src={tiktok} alt="Tik_tok_icon"/>
             </Grid>
             <Grid item>
-              <Box component="img" src={instagram} alt="Instagram_icon"/>
+              <SocialIcon src={instagram} alt="Instagram_icon"/>
             </Grid>
           </Grid>
           

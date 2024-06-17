@@ -20,9 +20,10 @@ export const TechBehindBlock = () => {
         </Typography>
       </Grid>
       
-      <Grid item container display="flex" justifyContent="space-evenly" sx={{ px: { xs: 4, sm: 20, md: 10, lg: 12 } }}>
+      <Grid item container display="flex" justifyContent="space-evenly"
+            sx={{ mx: { xs: 4, sm: 20, md: 10, lg: 'auto' }, maxWidth: 1200 }}>
         <Grid item xs={12} sm={12} md={3.5} lg={3.5}>
-          <Box width="100%"  component="img" src={Matching_img} alt="Matching_img" />
+          <Box width="100%" component="img" src={Matching_img} alt="Matching_img"/>
           <Typography gutterBottom sx={{ fontSize: 24 }}>Advanced Matching Algorithm</Typography>
           <Typography paragraph variant="body2">
             Our proprietary matching algorithm utilizes artificial intelligence to connect users with compatible
@@ -30,7 +31,7 @@ export const TechBehindBlock = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={3.5} lg={3.5}>
-          <Box width="100%"  component="img" src={Messaging_img} alt="Messaging_img"
+          <Box width="100%" component="img" src={Messaging_img} alt="Messaging_img"
                border={1} borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom sx={{ fontSize: 24 }}>Secure Messaging</Typography>
           <Typography paragraph variant="body2">

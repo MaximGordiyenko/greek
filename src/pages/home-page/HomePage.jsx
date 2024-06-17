@@ -11,7 +11,7 @@ export const HomePage = () => {
       <LifeStyleAppBlock/>
       
       <TextScroller
-        text=" * 1000+ of Greek organisations already part of system * 1000+ of Greek organisations already part of system * 1000+ of Greek organisations already part of system * "
+        text=" * 1000+ of Greek organisations already part of system * 1000+ of Greek organisations already part of system * 1000+ of Greek organisations already part of system * 1000+ of Greek organisations already part of system *  1000+ of Greek organisations already part of system * "
       />
       
       <MoreThenDatingBlock/>
@@ -19,7 +19,7 @@ export const HomePage = () => {
       <WhyHeyGreekBlock/>
       
       <TextScroller
-        text=" * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * "
+        text=" * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * join heygreek now * "
       />
       
       <SuccessStoriesBlock/>

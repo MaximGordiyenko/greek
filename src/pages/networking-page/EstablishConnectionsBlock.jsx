@@ -19,13 +19,15 @@ export const EstablishConnectionsBlock = () => {
         </Typography>
       </Grid>
       
-      <Grid item container display="flex" justifyContent="space-evenly" sx={{ px: { xs: 2, lg: 12 } }}>
+      <Grid item container display="flex" justifyContent="space-evenly"
+            sx={{ mx: { xs: 2, lg: 'auto' }, maxWidth: { lg: 1200 } }}>
         <Grid item xs={12} sm={8} md={3} lg={3} py={2}>
           <Box width="100%" component="img" src={Networthing_img} alt="Networthing_img"
                border={1} borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom variant="h6">Greek Buddy</Typography>
           <Typography paragraph variant="body2">
-            Expand your professional circle within the Greek community. Connect with fellow members for career opportunities, mentorship, and collaborations.
+            Expand your professional circle within the Greek community. Connect with fellow members for career
+            opportunities, mentorship, and collaborations.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={8} md={3} lg={3} py={2}>
@@ -33,7 +35,8 @@ export const EstablishConnectionsBlock = () => {
                border={1} borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom variant="h6">Side Hustle</Typography>
           <Typography paragraph variant="body2">
-            Whether you're a recent graduate or a seasoned professional, HeyGreek is your gateway to career advancement within your fraternity or sorority network.
+            Whether you're a recent graduate or a seasoned professional, HeyGreek is your gateway to career advancement
+            within your fraternity or sorority network.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={8} md={3} lg={3} py={2}>
@@ -41,7 +44,9 @@ export const EstablishConnectionsBlock = () => {
                border={1} borderColor="primary" borderRadius={3}/>
           <Typography gutterBottom variant="h6">Charity</Typography>
           <Typography paragraph variant="body2">
-            Give back to your community and make a difference through philanthropic endeavors. Explore volunteer opportunities, fundraising events, and charitable initiatives organized by HeyGreek and supported by members like you.
+            Give back to your community and make a difference through philanthropic endeavors. Explore volunteer
+            opportunities, fundraising events, and charitable initiatives organized by HeyGreek and supported by members
+            like you.
           </Typography>
         </Grid>
       </Grid>

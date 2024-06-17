@@ -13,7 +13,8 @@ export const BringTheFunBlock = () => {
         <Typography variant="h2" sx={{ fontSize: { xs: 52 } }}>Bringing the fun into dating</Typography>
       </Grid>
       
-      <Grid item container display="flex" justifyContent="space-evenly" sx={{ px: { xs: 3, lg: 14 } }}>
+      <Grid item container display="flex" justifyContent="space-evenly"
+            sx={{ mx: { xs: 3, lg: 'auto' }, maxWidth: { lg: 1200 } }}>
         <Grid item xs={12} sm={8} md={8} lg={3.3} pb={4}>
           <Box width="100%" component="img" src={Drinks_img} alt="Drinks_img"
                border={1} borderColor="primary" borderRadius={3}/>

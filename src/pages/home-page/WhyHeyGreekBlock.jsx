@@ -19,7 +19,7 @@ export const WhyHeyGreekBlock = () => {
         </Typography>
       </Grid>
       
-      <Grid item container display="flex" justifyContent="space-evenly" sx={{ px: { xs: 2, lg: 12 } }}>
+      <Grid item container display="flex" justifyContent="space-evenly" sx={{ mx: { xs: 2, lg: 'auto' }, maxWidth: 1200 }}>
         <Grid item xs={12} sm={7} md={8} lg={2.5} py={3}>
           <Box width="100%" component="img" src={Greeks_img} alt="Greeks_img"
                border={1} borderColor="primary" borderRadius={3}/>
