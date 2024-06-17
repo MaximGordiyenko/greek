@@ -23,7 +23,7 @@ export const OurMissionBlock = () => {
           </Grid>
         </Grid>
         
-        <Grid item xs={12} sm={6} md={6} lg={6}>
+        <Grid item xs={12} sm={6} md={6} lg={5}>
           <Box width="100%" sx={{ height: { xs: 250, sm: 250, md: 300, lg: 350 } }} component="img" src={Puzzle_img}
                alt="Puzzle_img"
                border={1} borderColor="primary" borderRadius={3}/>

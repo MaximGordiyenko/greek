@@ -1,4 +1,4 @@
-import { BackgroundGrid, Wrapper } from '../home-page/ui.styles.js';
+import { BackgroundGrid } from '../home-page/ui.styles.js';
 import { Typography, Grid } from '@mui/material';
 import btm_img_2 from '../../assets/btm_img-2.webp';
 import { HeyGreekIconButton } from '../../components/buttons/HeyGreekIconButton.jsx';
@@ -15,7 +15,7 @@ export const CraftedByGreeks = () => {
               maxWidth: { lg: 440 },
               mt: { xs: 36, sm: 42, md: 36, lg: 36 },
               mb: 4,
-              mx: { xs: 'auto', sm: 8, md: 10 },
+              mx: { xs: 'auto', sm: 8, md: 10, lg: 16 },
               p: { xs: 4, sm: 4, md: 6, lg: 4 }
             }}>
         
