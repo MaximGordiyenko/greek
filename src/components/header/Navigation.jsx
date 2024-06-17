@@ -44,7 +44,7 @@ const ListItemButtonCSS = styled(ListItemButton)(({ theme }) => ({
     backgroundColor: '#FAFAFA',
   },
   '&:hover': {
-    backgroundColor: 'transparent', // Change color on hover
+    backgroundColor: '#dfeaf6e8', // Change color on hover
     color: 'transparent', // Change text color on hover if needed
   },
 }));
