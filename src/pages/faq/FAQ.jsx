@@ -69,18 +69,18 @@ export const FAQ = () => {
       <Divider sx={{ width: '100%', borderColor: '#aaa' }}/>
       <BackgroundGrid container img={Pattern_Asterisk} height="100%" repeat>
         
-        <Typography variant="h2" sx={{ fontSize: { xs: 40 } }} py={8} mx="auto">
+        <Typography variant="h2" sx={{ fontSize: { xs: 40 } }} py={10} mx="auto">
           FAQ
         </Typography>
         
-        <Grid item xs={12} sm={12} md={12} lg={12} px={10} pb={16}>
+        <Grid item xs={12} sm={12} md={12} lg={12} pb={16} sx={{ mx: { xs: 4, lg: 20} }}>
           
           <Grid item container spacing={2} justifyContent="space-evenly">
-            <Grid item xs={12} sm={8} md={6} lg={6}>
+            <Grid item xs={12} sm={8} md={6} lg={5.5}>
               {leftSide.map(el => <AccordionComponent key={el.id} title={el.title} children={el.content}/>)}
             </Grid>
             
-            <Grid item xs={12} sm={8} md={6} lg={6}>
+            <Grid item xs={12} sm={8} md={6} lg={5.5}>
               {rightSide.map(el => <AccordionComponent key={el.id} title={el.title} children={el.content}/>)}
             </Grid>
           </Grid>

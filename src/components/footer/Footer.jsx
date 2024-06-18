@@ -16,7 +16,7 @@ export const Footer = () => {
       <Grid item container xs={12} sm={12} md={12} lg={12} justifyContent="space-between" alignItems="center">
         <Grid item xs={12} sm={12} md={2} lg={2} sx={{ textAlign: { xs: "center" }, pb: { xs: 4, md: 0 } }}>
           <Box component="img" src={HeyGreekLogoFooter} alt="HeyGreekFooterLogo"
-               sx={{ width: { xs: '50%', sm: '25%', md: '100%', lg: "100%" } }}
+               sx={{ width: { xs: '50%', sm: '25%', md: '100%', lg: "80%" } }}
           />
         </Grid>
         
