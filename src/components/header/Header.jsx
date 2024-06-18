@@ -26,7 +26,7 @@ export const Header = () => {
   };
   
   return (
-    <AppBar position="static" sx={{ color: '#000', background: '#fafafa' }}>
+    <AppBar position="sticky" top={0} sx={{ color: '#000', background: '#fafafa' }}>
       <Container maxWidth="lg" sx={{ display: "flex", justifyContent: "space-between", py: 1 }}>
         <Logo/>
         <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
