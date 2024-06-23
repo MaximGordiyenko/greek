@@ -13,7 +13,7 @@ import { GooglePlayMarketIcon } from '../icons/GooglePlayMarketIcon.jsx';
 
 export const Header = () => {
   const pages = ['Home', 'Dating', 'Networking', 'Tech', 'About'];
-  const [open, setState] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   
   const toggleDrawer = (open) => (event) => {
     if (
@@ -22,7 +22,7 @@ export const Header = () => {
     ) {
       return;
     }
-    setState(open);
+    setIsOpen(open);
   };
   
   return (
@@ -56,7 +56,7 @@ export const Header = () => {
         </IconButton>
         
         <Drawer
-          open={open}
+          open={isOpen}
           onClose={toggleDrawer(false)}
           onOpen={toggleDrawer(true)}
           anchor="top">
@@ -76,6 +76,7 @@ export const Header = () => {
               fontWeight={500}
               color="#282C3880"
               isDivider={true}
+              onMenuItemClick={() => setIsOpen(false)}
             />
             
             <Grid item container xs={12} justifyContent="center" alignItems="center" bgcolor="#FBBC04"
