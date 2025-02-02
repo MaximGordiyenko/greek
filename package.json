@@ -1,6 +1,7 @@
 {
   "name": "greek",
   "private": true,
+  "homepage": "https://MaximGordiyenko.github.io/greek",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +12,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-player": "^2.16.0"
+    "react-player": "^2.16.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.6",
