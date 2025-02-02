@@ -8,7 +8,7 @@ export const Navigation = ({ pages, fontSize, fontWeight, isDivider, onMenuItemC
   return (
     <>
       {pages?.map((page) => {
-        const pagePath = `/${page.toLowerCase()}`;
+        const pagePath = page === 'Home' ? '/' : `/${page.toLowerCase()}`;
         const isActive = currentPath === pagePath;
         
         return (
@@ -19,7 +19,7 @@ export const Navigation = ({ pages, fontSize, fontWeight, isDivider, onMenuItemC
             component={Link}
             onClick={onMenuItemClick}
             sx={{ background: 'transparent', py: { xs: 1, lg: 2 }, pl: { xs: 4, sm: 2, md: 2, lg: 2 } }}
-            to={`/${page.toLowerCase()}`}>
+            to={pagePath}>
             <ListItemText
               primary={
                 <Typography
