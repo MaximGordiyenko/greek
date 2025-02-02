@@ -1,6 +1,7 @@
 {
   "name": "greek",
   "private": true,
+  "homepage": "https://MaximGordiyenko.github.io/greek",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
